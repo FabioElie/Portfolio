@@ -243,6 +243,10 @@ nav {
   margin-bottom: 2.5rem;
 }
 
+.botoes{
+    display: flex;
+    gap: 1rem;
+}
 .btn-primario {
   background-color: var(--destaque);
   color: var(--primario-2);
