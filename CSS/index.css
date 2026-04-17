@@ -251,7 +251,7 @@ nav {
   background-color: var(--destaque);
   color: var(--primario-2);
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.55rem 1.2rem;
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
@@ -270,7 +270,7 @@ nav {
   background: none;
   color: var(--primario-1);
   border: 1px solid var(--fundo-2);
-  padding: 0.75rem 1.5rem;
+  padding: 0.55rem 1.2rem;
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
