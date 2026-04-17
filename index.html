@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fabio Elie — Desenvolvedor Full-Stack. Portfólio pessoal." />
+  <title>Fabio Elie — Desenvolvedor Full-Stack</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#inicio" class="nav-logo">Fabio Elie</a>
+
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+    
+    <div class="nav-botoes">
+        <button class="btn-hamburger" onclick="alternarMenu()" aria-label="Abrir menu">☰</button>
+        <button class="btn-tema" onclick="alternarTema()" aria-label="Alternar modo escuro">
+          <i id="icon-tema" class="fas fa-sun"></i>
+        </button>
+    </div>
+</nav>
+
+    <div id="menu-mobile" class="menu-mobile" role="navigation" aria-label="Menu mobile">
+      <a href="#sobre" onclick="fecharMenu()">Sobre</a>
+      <a href="#projetos" onclick="fecharMenu()">Projetos</a>
+      <a href="#habilidades" onclick="fecharMenu()">Habilidades</a>
+      <a href="#contato" onclick="fecharMenu()">Contato</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <div class="wrapper">
+        <img src="IMAGES/eu.jpeg" alt="Fábio Elie" class="minha-foto" />
+        <p class="ola">// Olá, eu sou</p>
+        <h1 class="meu-nome">Fábio Elie.</h1>
+        <h2 class="meu-titulo">Desenvolvedor Full-Stack.</h2>
+        <p class="minha-descricao">
+          Acredito que bons produtos nascem quando o desenvolvedor entende o todo.
+          Por isso trabalho tanto no front quanto no back. React e TypeScript de um lado, Java ou PHP do outro.
+        </p>
+        <div class="hero-botoes">
+          <a href="#projetos" class="btn-primario">Ver Projetos</a>
+          <a href="#contato" class="btn-secundario">Entrar em Contato</a>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="sobre">
+      <div class="wrapper">
+        <h2 class="titulo-secao">Sobre mim</h2>
+        <div class="sobre">
+          <div class="sobre-texto">
+            <p>
+              Comecei aprendendo back-end com Java, mas descobri que o lado interessante do problema está no todo, como dados fluem, como arquiteturas sustentam crescimento, como pessoas trabalham juntas. Não é só "fazer funcionar", é pensar em manutenção, escalabilidade e no impacto real das decisões técnicas.
+            </p>
+            <p>
+              Se você tem um desafio interessante ou um projeto que precisa sair do papel, vamos conversar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="projetos">
+      <div class="wrapper">
+        <h2 class="titulo-secao">Projetos</h2>
+        <div class="projetos-wrapper">
+
+          <article class="card-projeto">
+            <span class="card-numero">01</span>
+            <h3 class="card-titulo">Portfolio</h3>
+            <p class="card-descricao">
+              Este é meu portfólio pessoal. Um site moderno, responsivo e com tema claro/escuro que apresenta meu trabalho como desenvolvedor full-stack. O site foi construído com foco em acessibilidade e design clean.
+            </p>
+            <div class="card-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/FabioElie/Portfolio" aria-label="Ver código do projeto Portfolio no GitHub">GitHub</a>
+              <a href="#" aria-label="Ver demonstração do projeto Portfolio">Demo</a>
+            </div>
+          </article>
+
+          <article class="card-projeto">
+            <span class="card-numero">02</span>
+            <h3 class="card-titulo">API de Logistica</h3>
+            <p class="card-descricao">
+              Sistema desenvolvido para otimizar o processo de entrega de caminhões em uma empresa de minérios, automatizando a gestão de pedidos que antes eram recebidos via WhatsApp, tornando o fluxo mais ágil, preciso e eficiente. 
+            </p>
+            <div class="card-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Springboot</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/FabioElie/API-Logistica" aria-label="Ver código do projeto API de Logistica no GitHub">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card-projeto">
+            <span class="card-numero">03</span>
+            <h3 class="card-titulo">Controle de Fluxo Cirúrgico</h3>
+            <p class="card-descricao">
+              Sistema de controle de fluxo cirúrgico para otimizar o processo de agendamento e execução de procedimentos médicos. O sistema permite gerenciar horários, recursos e informações dos pacientes de forma eficiente.
+            </p>
+            <div class="card-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">Laravel</span>
+              <span class="tag">React</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Tailwind CSS</span>
+            </div>
+            <div class="card-links">
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="habilidades">
+      <div class="wrapper">
+        <h2 class="titulo-secao">Habilidades</h2>
+        <div class="habilidades-grid">
+
+          <div class="habilidade-categoria">
+            <h3>Linguagens</h3>
+            <ul>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>PHP</li>
+              <li>Python</li>
+            </ul>
+          </div>
+
+          <div class="habilidade-categoria">
+            <h3>Front-end</h3>
+            <ul>
+              <li>React</li>
+              <li>Tailwind CSS</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+
+          <div class="habilidade-categoria">
+            <h3>Back-end</h3>
+            <ul>
+              <li>Spring Boot</li>
+              <li>Node.js</li>
+              <li>Laravel</li>
+            </ul>
+          </div>
+
+          <div class="habilidade-categoria">
+            <h3>Bancos de Dados</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+
+          <div class="habilidade-categoria">
+            <h3>DevOps &amp; Infra</h3>
+            <ul>
+              <li>Docker</li>
+              <li>GitHub Actions</li>
+              <li>Linux</li>
+              <li>CI/CD</li>
+            </ul>
+          </div>
+
+          <div class="habilidade-categoria">
+            <h3>Ferramentas</h3>
+            <ul>
+              <li>Git</li>
+              <li>Swagger</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="contato">
+      <div class="wrapper">
+        <h2 class="contato-titulo">Vamos trabalhar juntos?</h2>
+        <p class="contato-descricao">
+          Estou aberto a estágios, colaborações e projetos interessantes.
+          Se quiser trocar uma ideia, é só me chamar.
+        </p>
+        <a href="mailto:fabioelie@outlook.com" class="contato-email">
+          fabioelie@outlook.com
+        </a>
+        <div class="contato-redes">
+          <a href="https://github.com/FabioElie" target="_blank"  aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/fabio-elie/" target="_blank"  aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="rodape-inner">
+      <span class="rodape-nome">Fabio Elie</span>
+      <span class="rodape-ano">© 2026</span>
+    </div>
+  </footer>
+
+  <script src="JS/index.js"></script>
+
+</body>
+</html>
