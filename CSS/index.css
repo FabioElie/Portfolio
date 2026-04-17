@@ -289,8 +289,8 @@ nav {
 
 hr {
   border: none;
-  border-top: 1px solid var(--fundo-2);
-  margin: 0 1.5rem;
+  border-top: 2px solid var(--fundo-2);
+  margin: 0 0.5rem;
 }
 
 section {
