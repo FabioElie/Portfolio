@@ -1,0 +1,88 @@
+.projetos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card-projeto {
+  border: 1px solid var(--fundo-2);
+  padding: 1.75rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: border-color 0.25s ease;
+  flex: 1;
+  min-width: 280px;
+}
+
+.card-projeto:hover {
+  border-color: var(--destaque);
+}
+
+@media (max-width: 900px) {
+  .card-projeto {
+    flex: 1 1 100%;
+  }
+}
+
+.card-numero {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--secundario-1);
+  margin-bottom: 1rem;
+}
+
+.card-titulo {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--primario-1);
+  margin-bottom: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.card-projeto:hover .card-titulo {
+  color: var(--destaque);
+}
+
+.card-descricao {
+  font-size: 0.875rem;
+  color: var(--secundario-1);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--destaque);
+  border: 1px solid var(--destaque);
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+}
+
+.card-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-links a {
+  font-size: 0.8rem;
+  color: var(--secundario-1);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.card-links a:hover {
+  color: var(--primario-1);
+}

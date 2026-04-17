@@ -1,0 +1,26 @@
+footer {
+  border-top: 1px solid var(--destaque);
+  padding: 1.2rem 0;
+  background-color: var(--secundario-1);
+}
+
+.rodape-inner {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.rodape-nome {
+  font-size: 1.1rem;
+  color: var(--primario-2);
+}
+
+.rodape-ano {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--primario-2);
+  padding-right: 25px;
+}
