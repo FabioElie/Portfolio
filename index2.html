@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Sidebar Flutuante</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: transparent;
+      color: #e2e8f0;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 20px;
+      top: 20px;
+      width: 60px;
+      height: 30vh;
+      background: #070030;
+      border-right: 2px solid #00ff37;
+      align-items: center;
+      padding: 10px 0;
+      gap: 6px;
+      z-index: 1000;
+      box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5);
+      border-radius: 32px;
+      
+    }
+
+    .sidebar-logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .sidebar-logo:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+    }
+
+    .sidebar-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid transparent;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      color: #cbd5e1;
+    }
+
+    .nav-item:hover {
+      background: rgba(236, 72, 153, 0.15);
+      border-color: #ec4899;
+      color: #ec4899;
+      transform: translateX(5px);
+    }
+
+    .nav-item i {
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo nav-item">R</div>
+
+    <nav class="sidebar-nav">
+      <button class="nav-item active" title="Sobre">
+        <i class="fas fa-user"></i>
+      </button>
+
+      <button class="nav-item" title="Projetos">
+        <i class="fas fa-briefcase"></i>
+      </button>
+
+      <button class="nav-item" title="Habilidades">
+        <i class="fas fa-star"></i>
+      </button>
+
+      <button class="nav-item" title="Contato">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </nav>
+  </aside>
+
+</body>
+</html>

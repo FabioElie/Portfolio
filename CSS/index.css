@@ -47,7 +47,7 @@ img {
 }
 
 .wrapper {
-  max-width: 68rem;
+  max-width: 70%;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -59,7 +59,7 @@ header {
   z-index: 100;
   background-color: var(--primario-2);
   backdrop-filter: blur(8px);
-  border-bottom: 2px solid var(--destaque);
+  border-bottom: 1px solid var(--destaque);
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -68,7 +68,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1.1rem 1.5rem;
-  max-width: 68rem;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -182,7 +182,7 @@ nav {
 }
 
 #inicio {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,7 +192,6 @@ nav {
 #inicio .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 0;
   align-items: center;
 }
 
@@ -238,9 +237,12 @@ nav {
 .minha-descricao {
   font-size: 1.05rem;
   color: var(--secundario-1);
-  max-width: 38rem;
+  min-width: 16rem;
+  max-width: 36rem;
   line-height: 1.7;
   margin-bottom: 2.5rem;
+  padding: 1rem;
+  text-align: justify;
 }
 
 .botoes{
@@ -294,7 +296,7 @@ hr {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .titulo-secao {
@@ -302,14 +304,7 @@ section {
   font-weight: 400;
   font-size: 2rem;
   color: var(--primario-1);
-  margin-bottom: 3rem;
-}
-
-
-.sobre {
-  display: flex;
-  gap: 4rem;
-  align-items: start;
+  margin-bottom: 2rem;
 }
 
 .sobre-texto p {
@@ -317,17 +312,6 @@ section {
   color: var(--secundario-1);
   line-height: 1.8;
   margin-bottom: 1rem;
-}
-
-
-
-
-
-@media (max-width: 768px) {
-  .sobre {
-    flex-direction: column;
-    gap: 2rem;
-  }
 }
 
 .projetos-wrapper {
@@ -477,7 +461,7 @@ section {
 
 #contato .wrapper {
   text-align: center;
-  max-width: 36rem;
+  max-width: 70%;
 }
 
 .contato-titulo {
@@ -531,16 +515,17 @@ section {
 
 footer {
   border-top: 1px solid var(--destaque);
-  padding: 1.2rem 1.5rem;
+  padding: 1.2rem 0;
   background-color: var(--secundario-1);
 }
 
 .rodape-inner {
-  max-width: 68rem;
+  max-width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 25px;
 }
 
 .rodape-nome {
@@ -552,4 +537,5 @@ footer {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.9rem;
   color: var(--primario-2);
+  padding-right: 25px;
 }
