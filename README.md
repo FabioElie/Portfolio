@@ -16,6 +16,7 @@
 ## 🎯 Sobre o Projeto
 
 Este é meu **portfólio pessoal** — um site moderno, responsivo e com tema claro/escuro que apresenta meu trabalho como desenvolvedor full-stack. O site foi construído com foco em **performance, acessibilidade e design clean**.
+Você pode acessar em: https://fabioelie.github.io/Portfolio/
 
 ### ✨ Características
 
