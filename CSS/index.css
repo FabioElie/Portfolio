@@ -47,9 +47,9 @@ img {
 }
 
 .wrapper {
-  max-width: 70%;
+  min-width: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 10%;
 }
 
 
@@ -182,11 +182,10 @@ nav {
 }
 
 #inicio {
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 1.5rem 4rem;
+  padding: 2rem;
 }
 
 #inicio .wrapper {
@@ -196,13 +195,12 @@ nav {
 }
 
 .minha-foto {
+  min-width: 18rem;
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
   margin-bottom: 2rem;
-  transition: filter 0.4s ease;
   border: 2px solid var(--destaque);
 }
 
@@ -246,8 +244,8 @@ nav {
 }
 
 .botoes{
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 .btn-primario {
   background-color: var(--destaque);
@@ -265,7 +263,7 @@ nav {
 }
 
 .btn-primario:hover {
-  opacity: 0.85;
+  opacity: 0.80;
 }
 
 .btn-secundario {
